@@ -1,0 +1,238 @@
+header {
+  text-align: center;
+  background: lightseagreen;
+}
+
+body {
+  background: gray;
+  margin: auto;
+}
+
+h5 {
+  background: lightseagreen;
+  height: 60px;
+  width: 250px;
+  padding-top: 15px;
+}
+
+.card-header {
+  margin-bottom: 30px;
+  color: lightseagreen;
+}
+
+.nav-item {
+  background: lightseagreen;
+  display: inline-block;
+  list-style-type: none;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+}
+
+.col {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.imageBanner {
+  margin-left: 114px;
+  border: 2px solid yellow;
+  position: absolute;
+  top: 170px;
+  z-index: 2;
+}
+
+.imgHolder {
+  border: 2px solid yellow;
+  z-index: 1;
+}
+
+.card {
+  padding: 20px;
+  margin: 20px;
+}
+
+.profilePhoto {
+  width: 200px;
+  height: 200px;
+}
+
+.row {
+  text-align: center;
+}
+
+.parBod {
+  font-family: "Permanent Marker", cursive;
+}
+
+footer {
+  background: lightseagreen;
+  text-align: center;
+  padding: 40px;
+}
+
+@media screen and (max-width: 330px) {
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 0px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+    width: 75px;
+    height: 10px;
+    padding: 0px;
+    left: 115px;
+    font-size: 12px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 4px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+    width: 100px;
+    height: 22px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 47px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    width: 175px;
+    height: 40px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 175px;
+    height: 175px;
+  }
+}
+/*
+@media screen and (max-width: 960px) {
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 47px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    width: 175px;
+    height: 40px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 175px;
+    height: 175px;
+  }
+}
+*/
+@media screen and (max-width: 1080px) {
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 107px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    width: 175px;
+    height: 40px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 175px;
+    height: 175px;
+  }
+}
+/*
+@media screen and (max-width: 1182px) {
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 114px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    width: 175px;
+    height: 40px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 175px;
+    height: 175px;
+  }
+}
