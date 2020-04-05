@@ -146,6 +146,37 @@ footer {
   }
 }
 
+@media only screen and (min-device-width: 320px) and (max-width: 576px) {
+  .card-header {
+    font-size: 1.5rem;
+  }
+
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 39px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    width: 100px;
+    height: 22px;
+    padding: 1px;
+    font-size: 12px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media only screen and (min-device-width: 576px) and (max-width: 768px) {
   .card-header {
     font-size: 1.5rem;
@@ -237,16 +268,6 @@ footer {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
 }
-/**********
-  iPad 3
-  **********/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-}
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1170px) {
   .col {
@@ -273,36 +294,4 @@ footer {
     width: 175px;
     height: 175px;
   }
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  .col {
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .imageBanner {
-    margin-left: 151px;
-    border: 2px solid yellow;
-    position: absolute;
-    top: 120px;
-    z-index: 2;
-    width: 175px;
-    height: 40px;
-    padding: 10px;
-    font-size: 10px;
-  }
-
-  .imgHolder {
-    border: 2px solid yellow;
-    z-index: 1;
-    width: 175px;
-    height: 175px;
-  }
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
 }
