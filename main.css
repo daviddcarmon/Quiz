@@ -18,7 +18,7 @@ h5 {
   margin-bottom: 30px;
   color: lightseagreen;
 }
-.navbar-light .navbar-brand{
+.navbar-light .navbar-brand {
   text-align: left;
 }
 
@@ -75,10 +75,14 @@ footer {
   padding: 40px;
 }
 
-
 /* not working correctly */
 
-@media screen and (max-width: 330px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card-header {
+    font-size: 1.5rem;
+  }
+
   .col {
     position: relative;
     text-align: center;
@@ -86,42 +90,14 @@ footer {
   }
 
   .imageBanner {
-    margin-left: 0px;
-    border: 2px solid yellow;
-    position: absolute;
-    top: 70px;
-    z-index: 2;
-    width: 75px;
-    height: 10px;
-    padding: 0px;
-    left: 115px;
-    font-size: 12px;
-  }
-
-  .imgHolder {
-    border: 2px solid yellow;
-    z-index: 1;
-    width: 75px;
-    height: 75px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .col {
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .imageBanner {
-    margin-left: 4px;
+    margin-left: 25px;
     border: 2px solid yellow;
     position: absolute;
     top: 70px;
     z-index: 2;
     width: 100px;
     height: 22px;
-    padding: 10px;
+    padding: 1px;
     font-size: 12px;
   }
 
@@ -133,7 +109,104 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .card-header {
+    font-size: 1.5rem;
+  }
+
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: -68px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    width: 100px;
+    height: 22px;
+    padding: 1px;
+    font-size: 12px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-device-width: 576px) and (max-width: 768px) {
+  .card-header {
+    font-size: 1.5rem;
+  }
+
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 39px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    width: 100px;
+    height: 22px;
+    padding: 1px;
+    font-size: 12px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .col {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .imageBanner {
+    margin-left: 145px;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+    width: 100px;
+    height: 22px;
+    padding: 1px;
+    font-size: 12px;
+  }
+
+  .imgHolder {
+    border: 2px solid yellow;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: landscape) {
   .col {
     position: relative;
     text-align: center;
@@ -142,33 +215,6 @@ footer {
 
   .imageBanner {
     margin-left: 47px;
-    border: 2px solid yellow;
-    position: absolute;
-    top: 120px;
-    z-index: 2;
-    width: 175px;
-    height: 40px;
-    padding: 10px;
-    font-size: 12px;
-  }
-
-  .imgHolder {
-    border: 2px solid yellow;
-    z-index: 1;
-    width: 175px;
-    height: 175px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .col {
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .imageBanner {
-    margin-left: 70px;
     border: 2px solid yellow;
     position: absolute;
     top: 120px;
@@ -187,13 +233,28 @@ footer {
   }
 }
 
-@media screen and (max-width: 1080px) {
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/**********
+  iPad 3
+  **********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1170px) {
   .col {
     position: relative;
     text-align: center;
     margin-bottom: 10px;
   }
-
+  /* 71px */
   .imageBanner {
     margin-left: 107px;
     border: 2px solid yellow;
@@ -213,8 +274,8 @@ footer {
     height: 175px;
   }
 }
-/*
-@media screen and (max-width: 1182px) {
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
   .col {
     position: relative;
     text-align: center;
@@ -222,7 +283,7 @@ footer {
   }
 
   .imageBanner {
-    margin-left: 114px;
+    margin-left: 151px;
     border: 2px solid yellow;
     position: absolute;
     top: 120px;
@@ -239,4 +300,9 @@ footer {
     width: 175px;
     height: 175px;
   }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
 }
