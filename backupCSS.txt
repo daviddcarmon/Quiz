@@ -1,6 +1,5 @@
 header {
   background: lightseagreen;
-  font-family: "Schoolbell", cursive;
 }
 
 body {
@@ -15,14 +14,9 @@ h5 {
   padding-top: 15px;
 }
 
-label {
-  font-family: "Schoolbell", cursive;
-}
-
 .card-header {
   margin-bottom: 30px;
   color: lightseagreen;
-  font-family: "Schoolbell", cursive;
 }
 .navbar-light .navbar-brand {
   text-align: left;
@@ -46,12 +40,14 @@ img {
 
 .imageBanner {
   margin-left: 114px;
+  border: 2px solid yellow;
   position: absolute;
   top: 170px;
   z-index: 2;
 }
 
 .imgHolder {
+  border: 2px solid yellow;
   z-index: 1;
 }
 
@@ -81,7 +77,7 @@ footer {
 
 /* not working correctly */
 
-/* Smartphones (portrait and landscape) */
+/* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .card-header {
     font-size: 1.5rem;
@@ -95,6 +91,7 @@ footer {
 
   .imageBanner {
     margin-left: 25px;
+    border: 2px solid yellow;
     position: absolute;
     top: 70px;
     z-index: 2;
@@ -105,18 +102,19 @@ footer {
   }
 
   .imgHolder {
+    border: 2px solid yellow;
     z-index: 1;
     width: 100px;
     height: 100px;
   }
 }
 
-/* Smartphones (landscape) extra */
+/* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */
 }
 
-/* Smartphones (portrait) */
+/* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   .card-header {
     font-size: 1.5rem;
@@ -130,6 +128,7 @@ footer {
 
   .imageBanner {
     margin-left: -68px;
+    border: 2px solid yellow;
     position: absolute;
     top: 60px;
     z-index: 2;
@@ -140,6 +139,7 @@ footer {
   }
 
   .imgHolder {
+    border: 2px solid yellow;
     z-index: 1;
     width: 100px;
     height: 100px;
@@ -159,6 +159,7 @@ footer {
 
   .imageBanner {
     margin-left: 39px;
+    border: 2px solid yellow;
     position: absolute;
     top: 60px;
     z-index: 2;
@@ -169,22 +170,10 @@ footer {
   }
 
   .imgHolder {
+    border: 2px solid yellow;
     z-index: 1;
     width: 100px;
     height: 100px;
-  }
-}
-
-@media only screen and (max-width: 500px) and (min-device-width: 490px) {
-  .imageBanner {
-    margin-left: 24px;
-    position: absolute;
-    top: 60px;
-    z-index: 2;
-    width: 100px;
-    height: 22px;
-    padding: 1px;
-    font-size: 10px;
   }
 }
 
@@ -201,23 +190,25 @@ footer {
 
   .imageBanner {
     margin-left: 39px;
+    border: 2px solid yellow;
     position: absolute;
     top: 60px;
     z-index: 2;
     width: 100px;
     height: 22px;
     padding: 1px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .imgHolder {
+    border: 2px solid yellow;
     z-index: 1;
     width: 100px;
     height: 100px;
   }
 }
 
-/* (portrait and landscape) */
+/* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .col {
     position: relative;
@@ -227,6 +218,7 @@ footer {
 
   .imageBanner {
     margin-left: 145px;
+    border: 2px solid yellow;
     position: absolute;
     top: 70px;
     z-index: 2;
@@ -237,14 +229,15 @@ footer {
   }
 
   .imgHolder {
+    border: 2px solid yellow;
     z-index: 1;
     width: 100px;
     height: 100px;
   }
 }
 
-/* (landscape) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: landscape) {
   .col {
     position: relative;
     text-align: center;
@@ -253,6 +246,7 @@ footer {
 
   .imageBanner {
     margin-left: 47px;
+    border: 2px solid yellow;
     position: absolute;
     top: 120px;
     z-index: 2;
@@ -263,13 +257,14 @@ footer {
   }
 
   .imgHolder {
+    border: 2px solid yellow;
     z-index: 1;
     width: 175px;
     height: 175px;
   }
 }
 
-/* (portrait) extra*/
+/* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
 }
@@ -283,6 +278,7 @@ footer {
   /* 71px */
   .imageBanner {
     margin-left: 107px;
+    border: 2px solid yellow;
     position: absolute;
     top: 120px;
     z-index: 2;
@@ -293,6 +289,7 @@ footer {
   }
 
   .imgHolder {
+    border: 2px solid yellow;
     z-index: 1;
     width: 175px;
     height: 175px;
