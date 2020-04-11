@@ -1,5 +1,5 @@
 Password Generator
-This web base password generator was designed to give the user the ability to randomly select a password based off their desired criteria; With the limitation of a minimu and maximum length of characters as well as at least one criteria.
+This web base password generator was designed to give the user the ability to randomly select a password based off their desired criteria; With the limitation of a minimum and maximum length of characters as well as at least one criteria.
 
 Getting Started
 Choose the criteria for your password
