@@ -82,7 +82,7 @@ var chosenCharacters = [];
 
 //Password criteria
 var passSymbol = confirm("Would you like to use symbols?");
-var passNum = confirm("would you like to use numbers?");
+var passNum = confirm("Would you like to use numbers?");
 var upperPass = confirm("Would you to use upper case letters?");
 var lowerPass = confirm("Would you like to use lower case letters?");
 var length = prompt(
@@ -136,6 +136,14 @@ function randomPass() {
       pass +
       chosenCharacters[Math.floor(Math.random() * chosenCharacters.length)];
   }
+  // dont not if this is the best way
+  if (pass.length > 128 || pass.length < 8) {
+    pass = "";
+  }
+  // kills all code
+  // if ((pass = "undefined")) {
+  //   pass = "";
+  // }
   return pass;
 }
 
