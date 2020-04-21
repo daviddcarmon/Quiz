@@ -2,6 +2,7 @@ function startQuiz() {
   console.log("clicked start button");
   startButton.classList.add("hide");
   scoreCardElement.classList.add("hide");
+  submitButton.classList.add("hide");
   scoreCard = 0;
   //shuffle questions positive or negative number 50%
   shuffleQuest = questions.sort(() => Math.random() - 0.5);
@@ -29,7 +30,7 @@ function showQuestion(question) {
     button.addEventListener("click", selectAnswer);
     answerButtons.appendChild(button);
   });
-  //   count();
+  count();
 }
 
 function selectAnswer(event) {
@@ -41,6 +42,10 @@ function selectAnswer(event) {
   Array.from(answerButtons.children).forEach((button) => {
     setStatus(button, button.dataset.correct);
   });
+  clearInterval(timerCount);
+  if (correct === "true") {
+    scoreCard = scoreCard + 10;
+  }
   if (shuffleQuest.length > currentQuest + 1) {
     nextButton.classList.remove("hide");
   } else {
@@ -62,6 +67,7 @@ function resetQuestions() {
 }
 
 function setStatus(element, correct) {
+  element.removeEventListener("click", selectAnswer);
   clearStatus(element);
   if (correct) {
     element.classList.add("correct");
@@ -80,20 +86,21 @@ function clearStatus(element) {
 //     var locUser = localStorage.getItem("user");
 //   });
 // }
-// function count() {
-//   var timeLeft = 10;
+function count() {
+  var timeLeft = 10;
+  timerElement.textContent = timeLeft;
 
-//   var count = setInterval(function () {
-//     timerElement.textContent = timeLeft;
-//     timeLeft--;
-//     if (timeLeft === 0) {
-//       alert("Out of time -5, correct answer " + "answer[0]");
-//       timerElement.textContent = "";
-//       clearInterval(count);
-//     }
-//  need to subtract when answered wrong
-//   }, 1000);
-// }
+  timerCount = setInterval(function () {
+    timerElement.textContent = timeLeft;
+    timeLeft--;
+    if (timeLeft === 0) {
+      alert("Out of time -5, correct answer " + "answer[0]");
+      timerElement.textContent = "";
+      clearInterval(timerCount);
+    }
+    //need to subtract when answered wrong
+  }, 1000);
+}
 
 var startButton = document.getElementById("start-btn");
 var nextButton = document.getElementById("next-btn");
@@ -106,6 +113,7 @@ var timerElement = document.getElementById("timer");
 var scoreCardElement = document.getElementById("scoreCard");
 var scoreCard = 0;
 var userName = document.createElement("input");
+var timerCount;
 
 var highScoreUser = localStorage.getItem("user");
 
@@ -184,7 +192,7 @@ nextButton.addEventListener("click", () => {
 });
 submitButton.addEventListener("click", (event) => {
   var user = document.querySelector("input").value;
-  localStorage.setItem("user", user);
+  localStorage.setItem(user, scoreCard);
   //   localStorage.setItem(highScoreUser);
   event.preventDefault();
 });
