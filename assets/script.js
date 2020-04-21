@@ -34,20 +34,31 @@ function showQuestion(question) {
 }
 
 function selectAnswer(event) {
-  var selectedButton = event.target;
-  //looking to see if clicked button holds true boolean value
-  var correct = selectedButton.dataset.correct;
+  if (event === "timeout") {
+    var correct = "false";
+  } else {
+    var selectedButton = event.target;
+    //looking to see if clicked button holds true boolean value
+    var correct = selectedButton.dataset.correct;
+  }
   setStatus(document.body, correct);
   // JSON.parse - compact function
   Array.from(answerButtons.children).forEach((button) => {
     setStatus(button, button.dataset.correct);
   });
-  clearInterval(timerCount);
   if (correct === "true") {
     scoreCard = scoreCard + 10;
+  } else {
+    scoreCard = scoreCard - 10;
   }
+  if (scoreCard === -10) {
+    scoreCard = 0;
+  }
+  clearInterval(timerCount);
   if (shuffleQuest.length > currentQuest + 1) {
     nextButton.classList.remove("hide");
+    scoreCardElement.classList.remove("hide");
+    scoreCardElement.textContent = "Score: " + scoreCard;
   } else {
     startButton.innerHTML = "Play again?";
     scoreCardElement.textContent = "Score: " + scoreCard;
@@ -61,6 +72,7 @@ function selectAnswer(event) {
 
 function resetQuestions() {
   nextButton.classList.add("hide");
+  scoreCardElement.classList.add("hide");
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild);
   }
@@ -78,14 +90,13 @@ function setStatus(element, correct) {
 function clearStatus(element) {
   element.classList.remove("wrong");
   element.classList.remove("correct");
-  //   clearInterval(count);
 }
 
-// function highScoreList() {
-//   highScoreUser.forEach((user) => {
-//     var locUser = localStorage.getItem("user");
-//   });
-// }
+function highScoreList() {
+  highScoreUser.forEach((user) => {
+    var locUser = localStorage.getItem("user");
+  });
+}
 function count() {
   var timeLeft = 10;
   timerElement.textContent = timeLeft;
@@ -94,7 +105,6 @@ function count() {
     timerElement.textContent = timeLeft;
     timeLeft--;
     if (timeLeft === 0) {
-      // alert("Out of time -5, correct answer " + "answer[0]");
       timerElement.textContent = "";
       clearInterval(timerCount);
     }
