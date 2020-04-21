@@ -94,7 +94,7 @@ function count() {
     timerElement.textContent = timeLeft;
     timeLeft--;
     if (timeLeft === 0) {
-      alert("Out of time -5, correct answer " + "answer[0]");
+      // alert("Out of time -5, correct answer " + "answer[0]");
       timerElement.textContent = "";
       clearInterval(timerCount);
     }
